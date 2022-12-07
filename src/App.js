@@ -1,18 +1,14 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import { Navbar } from './components/navigation'
+import { List, Navbar } from './components/navigation'
 
 const App = () => { 
-
-
-  const a = "anvar"
-  console.log(a)
-
+  
   return (
     <>
     <Navbar/>
     <Routes>
-             
+     <Route path='/' element={<List/>} />        
     </Routes>
     </>
   )
