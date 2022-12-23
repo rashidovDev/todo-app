@@ -11,7 +11,7 @@ import ListItem from './ListItem';
 const List = () => {
 
   return (
-    <div className='md:w-[80%] m-auto px-4 mt-5'>
+    <div className='md:w-[80%] m-auto px-4 mt-10'>
     <TableContainer component={Paper}>
     <Table sx={{ minWidth: 650 }} aria-label="simple table">
       <TableHead>

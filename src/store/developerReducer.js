@@ -1,3 +1,5 @@
+const ADD_DEVELOPER = "ADD_DEVELOPER"
+
 const defaultState = {
     developers : [
         {
@@ -47,9 +49,10 @@ const defaultState = {
 
 export const developerReducer = (state = defaultState, action) => {
     switch(action.type){
-        
-
+        case ADD_DEVELOPER : return {...state, developers : [...state.developers, action.payload]}
        default : 
            return state
-    } 
+   } 
 }
+
+export const addFile = (user) => ({ type : ADD_DEVELOPER, payload : user})
