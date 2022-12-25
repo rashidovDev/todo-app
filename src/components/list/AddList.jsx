@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
 import { addFile } from '../../store/developerReducer'
 import { useNavigate } from 'react-router-dom'
+import { Save, XCircle } from 'react-feather'
 
 const AddList = () => { 
   
@@ -39,13 +40,13 @@ const AddList = () => {
         <MyInput name="Email" placeholder="Enter your name" type="text" value={email} setValue={setEmail}/>
         <MyInput name="Kompaniya" placeholder="Enter your name" type="text" value={company} setValue={setCompany}/>
         <MyInput name="Pozitsiya" placeholder="Enter your name" type="text" value={position} setValue={setPosition}/>
-        <div className=''>
-            <Link to="/">
-            <MyButton class="cancel">
+        <div className='absolute bottom-5 right-2 md:right-[14] flex w-[300px] justify-center'>
+            <Link to="/" className='pr-2'>
+            <MyButton icon={<XCircle size={16}/>} class="cancel">
                 Bekor qilish
             </MyButton>
             </Link>
-            <MyButton class="save">
+            <MyButton icon={<Save size={16}/>} class="save">
                 Saqlash
             </MyButton>
         </div>

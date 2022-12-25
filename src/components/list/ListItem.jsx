@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {useSelector} from "react-redux"
+import {useDispatch, useSelector} from "react-redux"
 import TableRow from '@mui/material/TableRow';
 import TableCell from '@mui/material/TableCell';
 import {
@@ -11,12 +11,14 @@ import {
     CheckCircle,
     XCircle,
  } from "react-feather";
+import { deleteDeveloper } from '../../store/developerReducer';
  
  
 
 const ListItem = () => {
 
   const developers = useSelector(state => state.developers.developers)
+  const dispatch = useDispatch()
 
   return (
     <>
@@ -38,7 +40,7 @@ const ListItem = () => {
             <TableCell align="left" sx={{ width : "150px"}}>
               <div className='flex'>
                 <button className='mr-5'> <Edit3 color={"#189ED3"} size={16} /></button>
-                <button> <Trash2 color={"#E63950"} size={16} /></button>
+                <button onClick={() => dispatch(deleteDeveloper(developer.id))}> <Trash2 color={"#E63950"} size={16} /></button>
               </div>
             </TableCell>
           </TableRow>

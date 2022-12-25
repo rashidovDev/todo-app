@@ -2,7 +2,7 @@ import React from 'react'
 
 const MyInput = (props) => {
   return (
-    <div className='my-5 w-[400px] m-auto flex items-center'>
+    <div className='my-5 md:w-[400px] w-[300px] m-auto flex items-center'>
         <label htmlFor="" className='mr-2 text-[#999] text-[14px] w-[100px] flex justify-end'>
             {props.name}
         </label>
