@@ -7,16 +7,19 @@ import Paper from '@mui/material/Paper';
 import TableCell from '@mui/material/TableCell';
 import TableRow from '@mui/material/TableRow';
 import ListItem from './ListItem';
-import MyButton from '../../UI/MyButton';
+import MyButton from '../../utils/MyButton';
+import { Link } from 'react-router-dom';
 
 const List = () => {
   return (
     <div className='md:w-[80%] m-auto px-4 mt-10'>
     <div className='flex justify-between items-center my-5'>
       <div>
+        <Link to="/addlist">
       <MyButton color='#29335C'>
         Yangi qo'shish
       </MyButton>
+        </Link>
       </div>
     </div>
     <TableContainer component={Paper}>
