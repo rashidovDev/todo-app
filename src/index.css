@@ -73,3 +73,15 @@ header .nav-btn {
   }
 
 }
+
+.add{
+  background-color: #3ECF8E;
+}
+
+.save {
+  background-color: #5C3EBA;
+}
+
+.cancel{
+  background-color: red;
+}

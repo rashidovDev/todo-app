@@ -9,6 +9,7 @@ import TableRow from '@mui/material/TableRow';
 import ListItem from './ListItem';
 import MyButton from '../../utils/MyButton';
 import { Link } from 'react-router-dom';
+import { PlusCircle } from 'react-feather';
 
 const List = () => {
   return (
@@ -16,7 +17,7 @@ const List = () => {
     <div className='flex justify-between items-center my-5'>
       <div>
         <Link to="/addlist">
-      <MyButton color='#29335C'>
+        <MyButton class='add' icon={<PlusCircle size={16}/>}>
         Yangi qo'shish
       </MyButton>
         </Link>
@@ -27,11 +28,11 @@ const List = () => {
       <TableHead>
         <TableRow>
         <TableCell>№</TableCell>
-        <TableCell >Name</TableCell>
-          <TableCell align="left">Position</TableCell>
-          <TableCell align="left">Country</TableCell>
-          <TableCell align="left">Region</TableCell>
-          <TableCell align="left">City</TableCell>
+        <TableCell >Ism</TableCell>
+          <TableCell align="left">Yosh</TableCell>
+          <TableCell align="left">Email</TableCell>
+          <TableCell align="left">Kompaniya</TableCell>
+          <TableCell align="left">Pozitsiya</TableCell>
           <TableCell align="left">dmkwl</TableCell>
         </TableRow>
       </TableHead>

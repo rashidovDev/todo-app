@@ -31,13 +31,15 @@ const ListItem = () => {
             <TableCell component="th" scope="row">
                {developer.name}
             </TableCell>
+            <TableCell align="left">{developer.age}</TableCell>
+            <TableCell align="left">{developer.email}</TableCell>
+            <TableCell align="left">{developer.company}</TableCell>
             <TableCell align="left">{developer.position}</TableCell>
-            <TableCell align="left">{developer.country}</TableCell>
-            <TableCell align="left">{developer.region}</TableCell>
-            <TableCell align="left">{developer.city}</TableCell>
-            <TableCell align="left">
-                <button className='mr-5'>  <Edit3 color={"#189ED3"} size={16} /></button>
+            <TableCell align="left" sx={{ width : "150px"}}>
+              <div className='flex'>
+                <button className='mr-5'> <Edit3 color={"#189ED3"} size={16} /></button>
                 <button> <Trash2 color={"#E63950"} size={16} /></button>
+              </div>
             </TableCell>
           </TableRow>
     ))}

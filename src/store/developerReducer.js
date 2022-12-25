@@ -5,46 +5,52 @@ const EDIT_DEVELOPER = "EDIT_DEVELOPER"
 const defaultState = {
     developers : [
         {
+            id : 1,  
             name : "Anvar Rashidov",
+            age : 21,
+            email : "anvarrashidov17@gmail.com",
+            company : "EPAM",
             position : "Frontend Developer",
-            country : "Uzbekistan",
-            region : "Tashkent",
-            city : "Tashkent"
         },
         {
+            id : 1,
             name : "Anvar Rashidov",
+            age : 21,
+            email : "anvarrashidov17@gmail.com",
+            company : "EPAM",
             position : "Frontend Developer",
-            country : "Uzbekistan",
-            region : "Tashkent",
-            city : "Tashkent"
         },
         {
+            id : 1,
             name : "Anvar Rashidov",
+            age : 21,
+            email : "anvarrashidov17@gmail.com",
+            company : "EPAM",
             position : "Frontend Developer",
-            country : "Uzbekistan",
-            region : "Tashkent",
-            city : "Tashkent"
         },
         {
+            id : 1,
             name : "Anvar Rashidov",
+            age : 21,
+            email : "anvarrashidov17@gmail.com",
+            company : "EPAM",
             position : "Frontend Developer",
-            country : "Uzbekistan",
-            region : "Tashkent",
-            city : "Tashkent"
         },
         {
+            id : 1,
             name : "Anvar Rashidov",
+            age : 21,
+            email : "anvarrashidov17@gmail.com",
+            company : "EPAM",
             position : "Frontend Developer",
-            country : "Uzbekistan",
-            region : "Tashkent",
-            city : "Tashkent"
         },
         {
+            id : 1,
             name : "Anvar Rashidov",
+            age : 21,
+            email : "anvarrashidov17@gmail.com",
+            company : "EPAM",
             position : "Frontend Developer",
-            country : "Uzbekistan",
-            region : "Tashkent",
-            city : "Tashkent"
         },
     ]
 }
