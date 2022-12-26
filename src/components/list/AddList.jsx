@@ -35,11 +35,11 @@ const AddList = () => {
   return (
     <div className=' mt-20 md:text-center'>
         <form onSubmit={addDeveloper}>
-        <MyInput  name="Ism/Familiya" placeholder="Enter your name" type="text" value={name} setValue={setName}/>
-        <MyInput name="Yosh" placeholder="Enter your name" type="text" value={age} setValue={setAge}/>
-        <MyInput name="Email" placeholder="Enter your name" type="text" value={email} setValue={setEmail}/>
-        <MyInput name="Kompaniya" placeholder="Enter your name" type="text" value={company} setValue={setCompany}/>
-        <MyInput name="Pozitsiya" placeholder="Enter your name" type="text" value={position} setValue={setPosition}/>
+        <MyInput  name="Ism/Familiya" placeholder="Ismingizni kiriting" type="text" value={name} setValue={setName}/>
+        <MyInput name="Yosh" placeholder="Yoshingizni kiriting" type="text" value={age} setValue={setAge}/>
+        <MyInput name="Email" placeholder="Emailingizni kiriting" type="text" value={email} setValue={setEmail}/>
+        <MyInput name="Kompaniya" placeholder="Kompaniya nomi" type="text" value={company} setValue={setCompany}/>
+        <MyInput name="Pozitsiya" placeholder="Pozitsiya" type="text" value={position} setValue={setPosition}/>
         <div className='absolute bottom-5 right-2 md:right-[14] flex w-[300px] justify-center'>
             <Link to="/" className='pr-2'>
             <MyButton icon={<XCircle size={16}/>} class="cancel">
