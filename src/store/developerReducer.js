@@ -52,7 +52,22 @@ const defaultState = {
             company : "Google",
             position : "Frontend Developer",
         },
-      
+        {
+            id : 7,
+            name : "Xolmurod Boqiyev",
+            age : 23,
+            email : "xolmurod7@gmail.com",
+            company : "Udevs",
+            position : "Frontend Developer",
+        },
+        {
+            id : 8,
+            name : "Humoyun G'ulomov",
+            age : 23,
+            email : "humoyun@gmail.com",
+            company : "Apple",
+            position : "Android Developer",
+        },
     ]
 }
 

@@ -18,12 +18,12 @@ const List = () => {
   const developers = useSelector(state => state.developers.developers)
   const [search, setSearch] = React.useState('')
 
-  const setDevelopers = developers.filter(developer => developer.name.includes(search))
+  const setDevelopers = developers.filter(developer => developer.name.toLowerCase().includes(search))
 
   return (
     <div className='md:w-[80%] m-auto px-4 mt-10'>
-    <div className='flex justify-between items-center my-5'>
-      <div>
+    <div className='flex md:justify-between items-center my-5'>
+      <div className=''>
         <Link to="/addlist">
         <MyButton class='add' icon={<PlusCircle size={16}/>}>
         Yangi qo'shish
@@ -31,10 +31,11 @@ const List = () => {
         </Link>
       </div>
       <div>
-      <MyInput 
+      <input 
+        className='border w-[160px] md:w-[220px] text-[14px] border-[#DEE2E6] ml-20 outline-[#407BFF] px-3 py-[6px]'
       placeholder="Izlash..."
       value = {search}
-      setValue = {setSearch}
+      onChange = {e => setSearch(e.target.value)}
       />
       </div>
     </div>
