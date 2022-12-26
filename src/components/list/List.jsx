@@ -10,8 +10,16 @@ import ListItem from './ListItem';
 import MyButton from '../../utils/MyButton';
 import { Link } from 'react-router-dom';
 import { PlusCircle } from 'react-feather';
+import MyInput from '../../utils/MyInput';
+import { useSelector } from 'react-redux';
 
 const List = () => {
+  
+  const developers = useSelector(state => state.developers.developers)
+  const [search, setSearch] = React.useState('')
+
+  const setDevelopers = developers.filter(developer => developer.name.includes(search))
+
   return (
     <div className='md:w-[80%] m-auto px-4 mt-10'>
     <div className='flex justify-between items-center my-5'>
@@ -21,6 +29,13 @@ const List = () => {
         Yangi qo'shish
       </MyButton>
         </Link>
+      </div>
+      <div>
+      <MyInput 
+      placeholder="Izlash..."
+      value = {search}
+      setValue = {setSearch}
+      />
       </div>
     </div>
     <TableContainer component={Paper}>
@@ -37,7 +52,7 @@ const List = () => {
         </TableRow>
       </TableHead>
       <TableBody>
-         <ListItem/>
+         <ListItem developers={setDevelopers}/>
       </TableBody>
     </Table>
   </TableContainer>

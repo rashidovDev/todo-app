@@ -12,17 +12,16 @@ import {
     XCircle,
  } from "react-feather";
 import { deleteDeveloper } from '../../store/developerReducer';
- 
- 
 
-const ListItem = () => {
+const ListItem = ({developers}) => {
 
-  const developers = useSelector(state => state.developers.developers)
   const dispatch = useDispatch()
 
   return (
     <>
-    {developers.map((developer, idx) => (
+    {
+    
+    developers.map((developer, idx) => (
      <TableRow
             key={idx + 1}
             sx={{'&:last-child td, &:last-child th': { border: 0 } }}
