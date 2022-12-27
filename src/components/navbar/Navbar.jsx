@@ -5,14 +5,11 @@ import { navigation } from '../../data';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Navbar = () => {
-
-
     const navRef = useRef()
 
     const showNavbar = () => {
 		navRef.current.classList.toggle("responsive_nav");
 	};
-
     return (
         <div className='bg-[#5C3EBA] z-50'>
         <header className='md:w-[80%] m-auto px-4'>
@@ -24,7 +21,7 @@ const Navbar = () => {
                 <div className='mt-12 pr-4 hidden md:flex cursor-pointer'><AccountCircleIcon/></div>
                 <div className='md:hidden flex justify-center flex-col'>
                     <img src={require("../../assets/logo.jpg")} alt="logo" className='rounded-full w-[250px] h-[250px]' />
-                    <a className='text-center mt-5 text-[20px] flex items-center justify-center' href="https://t.me/rashidov_dev"><FaTelegram/> <span className='pl-1'>rashidov_dev</span></a>
+                    <a className='text-center mt-5 text-[20px] flex items-center justify-center' href="https://t.me/anvar_rashidov"><FaTelegram/> <span className='pl-1'>rashidov_dev</span></a>
                 </div>
                 </div>
                     // navigation.map((item, idx) => (

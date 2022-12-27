@@ -18,7 +18,7 @@ const List = () => {
   const developers = useSelector(state => state.developers.developers)
   const [search, setSearch] = React.useState('')
 
-  const setDevelopers = developers.filter(developer => developer.name.toLowerCase().includes(search))
+  const setDevelopers = developers.filter(developer => developer.name.toLowerCase().includes(search.toLowerCase()))
 
   return (
     <div className='md:w-[80%] m-auto px-4 mt-10'>
