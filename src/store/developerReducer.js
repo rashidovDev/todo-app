@@ -76,8 +76,7 @@ export const developerReducer = (state = defaultState, action) => {
         case ADD_DEVELOPER : return {...state, developers : [...state.developers, action.payload]}
         case DELETE_DEVELOPER : return {...state, developers : [...state.developers.filter(developer => developer.id !== action.payload)]}
        default : 
-           return state
-           
+           return state     
    } 
 }
 

@@ -39,24 +39,33 @@ const List = () => {
       />
       </div>
     </div>
-    <TableContainer component={Paper}>
-    <Table sx={{ minWidth: 650 }} aria-label="simple table">
-      <TableHead>
-        <TableRow>
-        <TableCell>№</TableCell>
-        <TableCell >Ism</TableCell>
-          <TableCell align="left">Yosh</TableCell>
-          <TableCell align="left">Email</TableCell>
-          <TableCell align="left">Kompaniya</TableCell>
-          <TableCell align="left">Pozitsiya</TableCell>
-          <TableCell align="left">dmkwl</TableCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-         <ListItem developers={setDevelopers}/>
-      </TableBody>
-    </Table>
-  </TableContainer>
+    {setDevelopers.length > 0 ?
+     (
+      <TableContainer component={Paper}>
+      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <TableHead>
+          <TableRow>
+          <TableCell>№</TableCell>
+          <TableCell >Ism</TableCell>
+            <TableCell align="left">Yosh</TableCell>
+            <TableCell align="left">Email</TableCell>
+            <TableCell align="left">Kompaniya</TableCell>
+            <TableCell align="left">Pozitsiya</TableCell>
+            <TableCell align="left">dmkwl</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+           <ListItem developers={setDevelopers}/>
+        </TableBody>
+      </Table>
+    </TableContainer>
+     )
+     :
+     (
+      <h1 className='text-center text-[25px]'>Ma'lumot yo'q</h1>
+     )
+      }
+   
     </div>
   )
 }
